@@ -1,0 +1,20 @@
+import turtle
+
+t = turtle
+For_ in range(3):
+t. forward(100)
+t. right(144)
+
+def draw_polygon(5, 100)
+t. forward(80)
+t. righr(145)
+t. forward(80)
+t. right(146)
+
+import turtle
+def draw_polygon(100, 144)
+t. turtle
+fill = red
+
+def_draw circle
+(100, 5)
