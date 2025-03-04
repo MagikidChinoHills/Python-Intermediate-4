@@ -40,19 +40,13 @@ import turtle
 
 t = turtle.Turtle
 t.fill("red")
-t.forward(100)
-t.left(144)
-t.forward(200)
-t.left(145)
-t.forward(200)
-t.left(146)
-t.forward(200)
-t.left(147)
-t.forward(200)
-t.left(148)
+
 # Problem 5
 import turtle
 def circle(side, length):
-    t = turtle.Turtle
+    t = turtle.Turtleimport turtle as t
+for _ in range(10):
+    t.forward(100)
+    t.right(144)
     t.side(100, 4)
 # I'm pretty bad at python
