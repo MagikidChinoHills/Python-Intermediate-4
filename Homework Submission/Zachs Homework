@@ -1,0 +1,27 @@
+import turtle
+
+t = turtle
+for_in range(3):
+    t. forward(100)
+    t. right(144)
+
+turtle.done
+
+import turtle
+
+t = turtle
+
+t.forward(15)
+t.left(25)
+t.forward(15)
+t.left(25)
+t.forward(15)
+t.left(25)
+t.forward(15)
+t.left(25)
+t.forward(15)
+t.left(25)
+t.forward(15)
+t.left(25)
+
+turtle.done
