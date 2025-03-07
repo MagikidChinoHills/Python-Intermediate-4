@@ -1,0 +1,139 @@
+
+
+
+
+import random
+
+
+
+import turtle
+
+
+
+
+
+t = turtle.Turtle()
+t.speed(0)
+n = random.randint(10, 50)
+m = random.randint(0, 180)
+for _ in range(7):
+        t.forward(n)
+        t.left(m)
+
+turtle.done()
+
+
+
+
+2
+
+
+import random
+
+
+
+import turtle
+
+
+
+
+
+t = turtle.Turtle()
+t.speed(0)
+lll = random.randint(0, 23678)
+o = random.randint(0, 44444)
+t.pencolor(random.choice(['red', 'blue', 'black', 'orange', 'green', 'skyblue']))
+for _ in range(7):
+        t.forward(lll)
+        t.left(o)
+
+turtle.done()
+
+
+
+3
+
+
+
+
+
+import random
+
+
+
+import turtle
+
+
+
+
+
+t = turtle.Turtle()
+t.speed(0)
+def draw_spirograph(size):
+    for _ in range(int(8000000 / size)):
+        t.pencolor(random.choice(['red', 'blue', 'black', 'orange', 'green', 'skyblue']))
+        t.circle(100)
+        t.right(size)
+
+draw_spirograph(1)
+
+turtle.done()
+
+
+
+4.
+
+import random
+
+
+
+import turtle
+
+
+
+
+
+t = turtle.Turtle()
+t.speed(10)
+def draw_spirograph(size):
+    for _ in range(int(8000000 / size)):
+        t.pencolor(random.choice(['red', 'blue', 'black', 'orange', 'green', 'skyblue']))
+        t.circle(100)
+        t.right(size)
+
+draw_spirograph(10000)
+
+turtle.done()
+
+5
+
+
+import random
+
+
+
+import turtle
+
+
+k = random.randint(50, 150)
+
+
+t = turtle.Turtle()
+t.speed(0)
+def draw_spirograph(size):
+    for _ in range(int(8000000 / size)):
+        t.pencolor(random.choice(['red', 'blue', 'black', 'orange', 'green', 'skyblue']))
+        t.circle(k)
+        t.right(size)
+
+draw_spirograph(1)
+
+turtle.done()
+
+
+
+
+
+
+       
+       
