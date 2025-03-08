@@ -1,0 +1,18 @@
+1. werid walking turtle in different directooons with weird color what is wromng whith the in-rufnange?
+import turtle
+import random
+
+t = turtle.Turtle
+
+
+
+in _ range (4)
+t.forward(30)
+
+
+c = random.randint()
+t.pencolor(c)
+t.forward(c)
+
+
+turtle.done
