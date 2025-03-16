@@ -1,0 +1,14 @@
+import turtle
+
+t = turtle.Turtle
+
+
+in_range(4)
+t.forward(30)
+
+
+c = random.randit()
+t.pencolor(c)
+t.forward(c)
+
+turtle done
