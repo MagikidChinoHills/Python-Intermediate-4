@@ -21,7 +21,7 @@ for _ in range(cnc):
   t.left(diahrea_mixer)
   hi = math.sin(45)
   hello = math.radians(hi)
-  t.circle(diahrea_mixer - 100)
+  t.circle(diahrea_mixer - hello)
   t.end_fill()
   if t == 5:
       t.circle(random.randint(1, 90))
