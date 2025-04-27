@@ -1,0 +1,163 @@
+
+
+1.
+
+
+import tkinter as tk  
+
+def add(x, y):
+    return x + y  # This adds two numbers and gives the answer back
+
+# This function is used to subtract two numbers
+def subtract(x, y):
+    return x - y  # This subtracts the second number from the first
+
+# Step 3: This function checks what math to do and shows the answer
+
+def calculate():
+    try:
+        # Grab the numbers from the boxes and turn them into real numbers
+        num1 = float(entry_num1.get())  # .get() takes the text typed into the entry box
+        num2 = float(entry_num2.get())
+        op = operation.get()  # Check if the user chose '+' or '-'
+
+        # Do the right math based on the choice
+        if op == "+":
+            result = add(num1, num2)
+        elif op == "-":
+            result = subtract(num1, num2)
+        elif op == "*":
+            result = times(num1, num2)
+     
+
+  
+        update_result_label("Result: " + str(result))
+    except ValueError:
+   
+        update_result_label("Invalid input")
+
+# Step 4: Function to update the label with the result
+
+def update_result_label(message):
+    result_label.config(text=message) 
+
+
+def clear():
+    entry_num1.delete(0, tk.END)  
+    entry_num2.delete(0, tk.END)
+    update_result_label("Result:")
+
+
+root = tk.Tk() 
+root.title("Enhanced Calculator")  
+
+
+entry_num1 = tk.Entry(root, width=10)  
+entry_num2 = tk.Entry(root, width=10)
+entry_num1.grid(row=0, column=0, padx=5, pady=5) 
+entry_num2.grid(row=0, column=2, padx=5, pady=5)
+
+
+operation = tk.StringVar(root)
+operation.set("+") 
+operation_menu = tk.OptionMenu(root, operation, "+", "-", '*') 
+operation_menu.grid(row=0, column=1, padx=5, pady=5)
+
+
+calc_button = tk.Button(root, text="Calculate", command=calculate)  
+calc_button.grid(row=1, column=0, padx=5, pady=5)
+
+
+clear_button = tk.Button(root, text="Clear", command=clear)
+clear_button.grid(row=2, column=0, padx=5, pady=5)
+
+
+result_label = tk.Label(root, text="Result:")  
+result_label.grid(row=3, columnspan=3, padx=5, pady=5)  
+# Step 12: Keep the window open!
+root.mainloop()
+
+2.
+
+
+import tkinter as tk  
+
+def add(x, y):
+    return x + y  # This adds two numbers and gives the answer back
+
+# This function is used to subtract two numbers
+def subtract(x, y):
+    return x - y  # This subtracts the second number from the first
+
+# Step 3: This function checks what math to do and shows the answer
+
+def calculate():
+    try:
+        # Grab the numbers from the boxes and turn them into real numbers
+        num1 = float(entry_num1.get())  # .get() takes the text typed into the entry box
+        num2 = float(entry_num2.get())
+        op = operation.get()  # Check if the user chose '+' or '-'
+
+        # Do the right math based on the choice
+        if op == "+":
+            result = add(num1, num2)
+        elif op == "-":
+            result = subtract(num1, num2)
+        elif op == "*":
+            result = times(num1, num2)
+        elif op == "/":
+            result = div(num1, num2)  
+
+    try:
+    result = num1 / num2
+    print(result)
+except ZeroDivisionError as i:
+    print(f"Error: {i}")
+     
+
+  
+        update_result_label("Result: " + str(result))
+    except ValueError:
+   
+        update_result_label("Invalid input")
+
+# Step 4: Function to update the label with the result
+
+def update_result_label(message):
+    result_label.config(text=message) 
+
+
+def clear():
+    entry_num1.delete(0, tk.END)  
+    entry_num2.delete(0, tk.END)
+    update_result_label("Result:")
+
+
+root = tk.Tk() 
+root.title("Enhanced Calculator")  
+
+
+entry_num1 = tk.Entry(root, width=10)  
+entry_num2 = tk.Entry(root, width=10)
+entry_num1.grid(row=0, column=0, padx=5, pady=5) 
+entry_num2.grid(row=0, column=2, padx=5, pady=5)
+
+
+operation = tk.StringVar(root)
+operation.set("+") 
+operation_menu = tk.OptionMenu(root, operation, "+", "-", '*') 
+operation_menu.grid(row=0, column=1, padx=5, pady=5)
+
+
+calc_button = tk.Button(root, text="Calculate", command=calculate)  
+calc_button.grid(row=1, column=0, padx=5, pady=5)
+
+
+clear_button = tk.Button(root, text="Clear", command=clear)
+clear_button.grid(row=2, column=0, padx=5, pady=5)
+
+
+result_label = tk.Label(root, text="Result:")  
+result_label.grid(row=3, columnspan=3, padx=5, pady=5)  
+# Step 12: Keep the window open!
+root.mainloop()
